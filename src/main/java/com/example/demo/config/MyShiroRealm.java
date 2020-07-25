@@ -25,7 +25,6 @@ import com.example.demo.service.IUserService;
 
 
 public class MyShiroRealm extends AuthorizingRealm{
-	
 	@Autowired
 	private IUserService  userService ;
 	@Autowired
@@ -44,7 +43,7 @@ public class MyShiroRealm extends AuthorizingRealm{
 	  
 	   authorizationInfo.setRoles(roleService.listRoleNames(username));
 	   authorizationInfo.setStringPermissions(permissionService.listPermissions(username));
-	   System.out.println("===============r   p ==================");
+	   System.out.println("===============rp==================");
 	   System.out.println(roleService.listRoleNames(username));
 	   System.out.println(permissionService.listPermissions(username));
 	    return authorizationInfo;
