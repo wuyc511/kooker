@@ -43,7 +43,7 @@ public class MyShiroRealm extends AuthorizingRealm{
 	  
 	   authorizationInfo.setRoles(roleService.listRoleNames(username));
 	   authorizationInfo.setStringPermissions(permissionService.listPermissions(username));
-	   System.out.println("===============rp==================");
+	   System.out.println("==========rp=======");
 	   System.out.println(roleService.listRoleNames(username));
 	   System.out.println(permissionService.listPermissions(username));
 	    return authorizationInfo;
@@ -71,7 +71,6 @@ public class MyShiroRealm extends AuthorizingRealm{
 	    Session session=subject.getSession();
 	    session.setAttribute("subject", subject);
 	    return authenticationInfo;
-	
 	}
 
 }
