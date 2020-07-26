@@ -91,9 +91,7 @@
     <artifactId>shiro-spring-boot-web-starter</artifactId>
     <version>1.4.1</version>
 </dependency>
-
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
