@@ -1,5 +1,0 @@
-server:
-  port: 81
-user:
-  uname: zhangsan
-  pwd: 123
