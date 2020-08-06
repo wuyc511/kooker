@@ -13,13 +13,25 @@ import com.example.demo.entity.User;
  * @since 2019-08-21
  */
 public interface IUserService  {
-
-	    public String getPassword(String name);
-	    public User getByName(String name);
-	     
-	    public List<User> list();
-	    public void add(User user);
-	    public void delete(Long id);
-	    public User get(Long id);
-	    public void update(User user);
+	
+	// 获取密码
+	public String getPassword(String name);
+	
+	// 获取用户名
+	public User getByName(String name);
+	 
+	// 查询
+	public List<User> list();
+	
+	// 添加用户
+	public void add(User user);
+	
+	// 删除
+	public void delete(Long id);
+	
+	// 查询用户
+	public User get(Long id);
+	
+	//	更新
+	public void update(User user);
 }
