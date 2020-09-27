@@ -15,13 +15,29 @@ import com.example.demo.entity.User;
  * @since 2019-08-21
  */
 public interface IRoleService  {
-	 public Set<String> listRoleNames(String userName);
-	    public List<Role> listRoles(String userName);
-	    public List<Role> listRoles(User user);
-	 
-	    public List<Role> list();
-	    public void add(Role role);
-	    public void delete(Long id);
-	    public Role get(Long id);
-	    public void update(Role role);
+	
+	public Set<String> listRoleNames(String userName);
+	
+    public List<Role> listRoles(String userName);
+    
+    public List<Role> listRoles(User user);
+    
+    public List<Role> list();
+    
+    public void add(Role role);
+    
+    public void delete(Long id);
+    
+    /**
+     * 角色查询--根据id 
+     * @param id
+     * @return
+     */
+    public Role get(Long id);
+    
+    /**
+     * 修改
+     * @param role
+     */
+    public void update(Role role);
 }

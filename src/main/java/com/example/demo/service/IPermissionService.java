@@ -15,14 +15,49 @@ import com.example.demo.entity.Role;
  * @since 2019-08-21
  */
 public interface IPermissionService  {
-	    public Set<String> listPermissions(String userName);
-	 
-	    public List<Permission> list();
-	    public void add(Permission permission);
-	    public void delete(Long id);
-	    public Permission get(Long id);
-	    public void update(Permission permission);
-	 
-	    public List<Permission> list(Role role);
+	/**
+	 * 权限列表
+	 * @param userName
+	 * @return
+	 */
+    public Set<String> listPermissions(String userName);
+ 
+    /**
+     * 查询列表
+     * @return
+     */
+    public List<Permission> list();
+    
+    /**
+     * 添加
+     * @param permission
+     */
+    public void add(Permission permission);
+    
+    /**
+     * 删除--根据ID
+     * @param id
+     */
+    public void delete(Long id);
+    
+    /**
+     * 查询-根据id 
+     * @param id
+     * @return
+     */
+    public Permission get(Long id);
+    
+    /**
+     * 修改
+     * @param permission
+     */
+    public void update(Permission permission);
+ 
+    /**
+     * 角色查询
+     * @param role
+     * @return
+     */
+    public List<Permission> list(Role role);
 	     
 }

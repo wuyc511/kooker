@@ -32,7 +32,7 @@ public class UserServiceImpl  implements IUserService {
 	    @Override
 	    public String getPassword(String name) {
 	        User user = getByName(name);
-	        if(null==user)
+	        if(null == user)
 	            return null;
 	        return user.getPassword();
 	    }
