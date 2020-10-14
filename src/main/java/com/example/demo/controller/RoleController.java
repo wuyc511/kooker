@@ -28,7 +28,7 @@ import com.example.demo.service.RolePermissionService;
 @Controller
 @RequestMapping("/config")
 public class RoleController {
-	 @Autowired IRoleService roleService;
+	@Autowired IRoleService roleService;
 	@Autowired RolePermissionService rolePermissionService;
     @Autowired IPermissionService permissionService;
      

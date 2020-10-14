@@ -8,7 +8,7 @@
     </commentGenerator>
     <!-- Mysql数据库连接的信息：驱动类、连接地址、用户名、密码 -->
     <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-        connectionURL="jdbc:mysql://192.168.88.85:3379/shiro?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8"
+        connectionURL="jdbc:mysql://127.0.0.1:3306/shiro?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8"
         userId="root"
         password="1234">
     </jdbcConnection>
